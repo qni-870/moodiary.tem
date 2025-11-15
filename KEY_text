@@ -1,0 +1,11 @@
+위치: 프로젝트 루트 폴더에 .env 파일
+방법:
+env.example를 복사해 .env 생성
+Windows: copy env.example .env
+macOS/Linux: cp env.example .env
+아래 값 입력
+CLOVA_API_KEY=각자_본인_API_KEY
+CLOVA_API_URL=각자_본인_API_엔드포인트
+실행 시 자동 적용:
+로컬 실행: python-dotenv가 .env를 로드함
+Docker: docker-compose.yml에서 env_file: .env로 주입
